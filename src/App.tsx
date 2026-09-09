@@ -20,6 +20,8 @@ import BlogDashboard from "./pages/dashboard/blog";
 import BlogEditor from "./pages/dashboard/blog/editor";
 import Features from "./pages/features";
 import Home from "./pages/home";
+import DevHome from "./pages/dev-home";
+
 import CookiePolicyPage from "./pages/legal/cookie-policy";
 import PrivacyPolicyPage from "./pages/legal/privacy-&-policy";
 import TermsAndConditionPage from "./pages/legal/terms-&-condition";
