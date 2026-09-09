@@ -52,6 +52,17 @@ export default {
   				DEFAULT: 'rgb(var(--card))',
   				foreground: 'rgb(var(--card-foreground))'
   			},
+  			dev: {
+  				bg: 'rgb(var(--dev-bg))',
+  				surface: 'rgb(var(--dev-surface))',
+  				elevated: 'rgb(var(--dev-elevated))',
+  				ink: 'rgb(var(--dev-ink))',
+  				'ink-soft': 'rgb(var(--dev-ink-soft))',
+  				line: 'rgb(var(--dev-line))',
+  				accent: 'rgb(var(--dev-accent))',
+  				'accent-ink': 'rgb(var(--dev-accent-ink))',
+  				'accent-soft': 'rgb(var(--dev-accent-soft))'
+  			},
   			revio: {
   				obsidian: 'rgb(var(--revio-obsidian))',
   				charcoal: 'rgb(var(--revio-charcoal))',
@@ -64,6 +75,7 @@ export default {
   				'light-pink': 'rgb(var(--revio-light-pink))',
   				'light-green': 'rgb(var(--revio-light-green))'
   			}
+
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
