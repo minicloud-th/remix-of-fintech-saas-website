@@ -30,7 +30,7 @@ const DevHowItWorks = () => {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="max-w-2xl text-[28px] font-semibold tracking-[-0.03em] text-dev-ink sm:text-[38px]"
+          className="max-w-2xl text-[28px] font-semibold leading-[1.35] tracking-[-0.02em] text-dev-ink sm:text-[38px]"
         >
           แค่ 3 ขั้นตอน ก็เริ่มใช้ได้เลย
         </motion.h2>

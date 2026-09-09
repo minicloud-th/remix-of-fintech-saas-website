@@ -25,7 +25,7 @@ const DevHero = () => {
 
           <motion.h1
             variants={fadeUp(0.05, 24)}
-            className="mt-6 text-balance text-[34px] font-semibold leading-[1.12] tracking-[-0.035em] text-dev-ink sm:text-[48px] lg:text-[58px]"
+            className="mt-6 text-balance text-[34px] font-semibold leading-[1.3] tracking-[-0.035em] text-dev-ink sm:text-[48px] lg:text-[58px]"
           >
             พบกับ DEV ผู้ช่วย AI อัจฉริยะของคุณ
           </motion.h1>

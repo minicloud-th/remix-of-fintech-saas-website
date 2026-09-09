@@ -38,7 +38,7 @@ const DevFaq = () => {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="text-[28px] font-semibold tracking-[-0.03em] text-dev-ink sm:text-[38px]"
+          className="text-[28px] font-semibold leading-[1.35] tracking-[-0.02em] text-dev-ink sm:text-[38px]"
         >
           คำถามที่พบบ่อย
         </motion.h2>

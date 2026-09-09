@@ -50,7 +50,7 @@ const DevFeatures = () => {
         >
           <motion.h2
             variants={fadeUp(0)}
-            className="text-[28px] font-semibold tracking-[-0.03em] text-dev-ink sm:text-[38px]"
+            className="text-[28px] font-semibold leading-[1.35] tracking-[-0.02em] text-dev-ink sm:text-[38px]"
           >
             ทุกเรื่องที่คุณอยากถามเพื่อนร่วมงานเก่ง ๆ สักคน
           </motion.h2>
