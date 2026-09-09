@@ -45,7 +45,9 @@ const App = () => (
         <BrowserRouter>
           <AuthProvider>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<DevHome />} />
+              <Route path="/revio" element={<Home />} />
+
               <Route path="/company" element={<Company />} />
               <Route path="/features" element={<Features />} />
               <Route path="/pricing" element={<Pricing />} />
