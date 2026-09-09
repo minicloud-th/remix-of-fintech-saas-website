@@ -27,10 +27,10 @@ const DevDownload = () => {
   };
 
   const meta = [
-    { label: "Version", value: `DEV v${devConfig.version}` },
-    { label: "Platform", value: devConfig.platform },
-    { label: "Format", value: devConfig.format },
-    { label: "Size", value: devConfig.size },
+    { label: "เวอร์ชัน", value: `DEV v${devConfig.version}` },
+    { label: "แพลตฟอร์ม", value: devConfig.platform },
+    { label: "รูปแบบไฟล์", value: devConfig.format },
+    { label: "ขนาดไฟล์", value: devConfig.size },
   ];
 
   return (
@@ -46,13 +46,12 @@ const DevDownload = () => {
           <div>
             <motion.h2
               variants={fadeUp(0)}
-              className="text-[28px] font-semibold tracking-[-0.03em] text-dev-ink sm:text-[38px]"
+              className="text-[28px] font-semibold leading-[1.35] tracking-[-0.02em] text-dev-ink sm:text-[38px]"
             >
-              Take DEV with you.
+              พก DEV ติดตัวไปด้วยกัน
             </motion.h2>
             <motion.p variants={fadeUp(0.08)} className="mt-4 max-w-md text-[16px] leading-relaxed text-dev-ink-soft">
-              The full assistant, on your phone. Install the Android package directly — no store
-              queue, no waiting list.
+              ผู้ช่วยตัวเต็มบนมือถือของคุณ ติดตั้งไฟล์ Android ได้โดยตรง ไม่ต้องรอคิวสโตร์ ไม่ต้องลงชื่อรอ
             </motion.p>
             <motion.dl variants={fadeUp(0.16)} className="mt-8 grid max-w-md grid-cols-2 gap-x-6 gap-y-4">
               {meta.map((item) => (
@@ -77,10 +76,10 @@ const DevDownload = () => {
             </div>
 
             <h3 className="mt-6 text-[20px] font-semibold tracking-[-0.015em] text-dev-ink">
-              DEV for Android
+              DEV สำหรับ Android
             </h3>
             <p className="mt-2 text-[14.5px] leading-relaxed text-dev-ink-soft">
-              Signed APK, direct install. Requires Android 9 or newer.
+              ไฟล์ APK ที่เซ็นรับรองแล้ว ติดตั้งได้ทันที รองรับ Android 9 ขึ้นไป
             </p>
 
             <motion.button
@@ -102,7 +101,7 @@ const DevDownload = () => {
                     transition={{ duration: 0.2 }}
                     className="inline-flex items-center gap-2"
                   >
-                    Download APK
+                    ดาวน์โหลด APK
                     <ArrowDown className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-y-0.5" />
                   </motion.span>
                 )}
@@ -116,7 +115,7 @@ const DevDownload = () => {
                     className="inline-flex items-center gap-2"
                   >
                     <Loader2 className="h-4 w-4 animate-spin" />
-                    Preparing APK...
+                    กำลังเตรียมไฟล์ APK...
                   </motion.span>
                 )}
                 {state === "ready" && (
@@ -129,14 +128,14 @@ const DevDownload = () => {
                     className="inline-flex items-center gap-2"
                   >
                     <Check className="h-4 w-4" />
-                    Download ready
+                    พร้อมดาวน์โหลดแล้ว
                   </motion.span>
                 )}
               </AnimatePresence>
             </motion.button>
 
             <p className="mt-4 text-center text-[12.5px] text-dev-ink-soft">
-              By installing you agree to the DEV terms of use.
+              การติดตั้งถือว่าคุณยอมรับเงื่อนไขการใช้งานของ DEV
             </p>
           </motion.div>
         </motion.div>

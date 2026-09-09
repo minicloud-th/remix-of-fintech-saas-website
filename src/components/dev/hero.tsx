@@ -20,22 +20,21 @@ const DevHero = () => {
             className="mx-auto inline-flex items-center gap-2 rounded-full border border-dev-line bg-dev-surface px-3.5 py-1.5 text-[12.5px] text-dev-ink-soft"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-dev-accent" />
-            DEV v1.0 is available for Android
+            DEV v1.0 พร้อมใช้งานบน Android แล้ว
           </motion.p>
 
           <motion.h1
             variants={fadeUp(0.05, 24)}
-            className="mt-6 text-balance text-[34px] font-semibold leading-[1.12] tracking-[-0.035em] text-dev-ink sm:text-[48px] lg:text-[58px]"
+            className="mt-6 text-balance text-[34px] font-semibold leading-[1.3] tracking-[-0.035em] text-dev-ink sm:text-[48px] lg:text-[58px]"
           >
-            Meet DEV, your intelligent AI assistant.
+            พบกับ DEV ผู้ช่วย AI อัจฉริยะของคุณ
           </motion.h1>
 
           <motion.p
             variants={fadeUp(0.16)}
             className="mx-auto mt-5 max-w-2xl text-pretty text-[16px] leading-relaxed text-dev-ink-soft sm:text-[17.5px]"
           >
-            Ask questions, explore ideas, analyze information, and get useful answers — all in one
-            place.
+            ถามคำถาม สำรวจไอเดีย วิเคราะห์ข้อมูล และได้คำตอบที่นำไปใช้ได้จริง — ครบในที่เดียว
           </motion.p>
 
           <motion.div variants={fadeUp(0.26)} className="mx-auto mt-9 max-w-2xl">
@@ -54,7 +53,7 @@ const DevHero = () => {
               className="group inline-flex h-11 w-full items-center justify-center gap-2 rounded-full bg-dev-ink px-6 text-sm font-medium text-dev-bg sm:w-auto"
             >
               <Download className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
-              Download APK
+              ดาวน์โหลด APK
             </motion.a>
             <motion.a
               href="#features"
@@ -63,7 +62,7 @@ const DevHero = () => {
               transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
               className="group inline-flex h-11 w-full items-center justify-center gap-2 rounded-full border border-dev-line bg-dev-surface px-6 text-sm font-medium text-dev-ink transition-colors duration-300 hover:border-dev-ink-soft/50 sm:w-auto"
             >
-              Explore DEV
+              สำรวจ DEV
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </motion.a>
           </motion.div>

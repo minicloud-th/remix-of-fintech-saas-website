@@ -6,10 +6,10 @@ const DevFooter = () => (
       <DevLogo />
       <nav className="flex flex-wrap items-center gap-x-7 gap-y-3">
         {[
-          { label: "Features", href: "#features" },
-          { label: "How it works", href: "#how-it-works" },
-          { label: "Download", href: "#download" },
-          { label: "FAQ", href: "#faq" },
+          { label: "ความสามารถ", href: "#features" },
+          { label: "วิธีใช้งาน", href: "#how-it-works" },
+          { label: "ดาวน์โหลด", href: "#download" },
+          { label: "คำถามที่พบบ่อย", href: "#faq" },
         ].map((link) => (
           <a
             key={link.href}
@@ -21,7 +21,7 @@ const DevFooter = () => (
         ))}
       </nav>
       <p className="text-[13px] text-dev-ink-soft">
-        © {new Date().getFullYear()} DEV. Made in Lovable.
+        © {new Date().getFullYear()} DEV — สร้างด้วย Lovable
       </p>
     </div>
   </footer>

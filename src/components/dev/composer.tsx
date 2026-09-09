@@ -4,10 +4,10 @@ import { ArrowUp, Braces, Lightbulb, ScrollText, Sparkle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const quickActions = [
-  { label: "Explain", icon: Sparkle },
-  { label: "Summarize", icon: ScrollText },
-  { label: "Code", icon: Braces },
-  { label: "Brainstorm", icon: Lightbulb },
+  { label: "อธิบาย", icon: Sparkle },
+  { label: "สรุปให้หน่อย", icon: ScrollText },
+  { label: "เขียนโค้ด", icon: Braces },
+  { label: "ระดมไอเดีย", icon: Lightbulb },
 ];
 
 interface ComposerProps {
@@ -40,7 +40,7 @@ const DevComposer = ({ onSend }: ComposerProps) => {
         )}
       >
         <label htmlFor="dev-composer" className="sr-only">
-          Ask DEV anything
+          ถาม DEV ได้ทุกเรื่อง
         </label>
         <input
           id="dev-composer"
@@ -48,13 +48,13 @@ const DevComposer = ({ onSend }: ComposerProps) => {
           onChange={(e) => setValue(e.target.value)}
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
-          placeholder="Ask DEV anything..."
+          placeholder="ถาม DEV ได้ทุกเรื่อง..."
           autoComplete="off"
           className="h-9 flex-1 bg-transparent text-[15px] text-dev-ink placeholder:text-dev-ink-soft/70 focus:outline-none"
         />
         <motion.button
           type="submit"
-          aria-label="Send message"
+          aria-label="ส่งข้อความ"
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
           transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}

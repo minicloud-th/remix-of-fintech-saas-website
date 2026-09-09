@@ -4,18 +4,18 @@ import { useMotionSafe, viewportOnce } from "./motion";
 const steps = [
   {
     number: "01",
-    title: "Install DEV",
-    body: "Grab the APK, install it in seconds, and open the app. No account gymnastics.",
+    title: "ติดตั้ง DEV",
+    body: "โหลดไฟล์ APK ติดตั้งในไม่กี่วินาที แล้วเปิดใช้ได้เลย ไม่ต้องสมัครยุ่งยาก",
   },
   {
     number: "02",
-    title: "Ask anything",
-    body: "Type a question, paste a document, or drop a file. DEV figures out what you need.",
+    title: "ถามได้ทุกเรื่อง",
+    body: "พิมพ์คำถาม วางเอกสาร หรือแนบไฟล์ DEV เข้าใจว่าคุณต้องการอะไร",
   },
   {
     number: "03",
-    title: "Act on the answer",
-    body: "Follow up, refine, export or share — the thread keeps its full context.",
+    title: "ต่อยอดจากคำตอบ",
+    body: "ถามต่อ ปรับแก้ ส่งออก หรือแชร์ได้ทันที บทสนทนาจำบริบทไว้ครบ",
   },
 ];
 
@@ -30,9 +30,9 @@ const DevHowItWorks = () => {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="max-w-2xl text-[28px] font-semibold tracking-[-0.03em] text-dev-ink sm:text-[38px]"
+          className="max-w-2xl text-[28px] font-semibold leading-[1.35] tracking-[-0.02em] text-dev-ink sm:text-[38px]"
         >
-          Three steps. That's the whole setup.
+          แค่ 3 ขั้นตอน ก็เริ่มใช้ได้เลย
         </motion.h2>
 
         <motion.ol
