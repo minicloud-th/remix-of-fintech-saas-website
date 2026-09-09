@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import DevLogo from "./logo";
 
-const question = "What changed in our API latency this week?";
+const question = "สัปดาห์นี้ค่า latency ของ API เราเปลี่ยนไปยังไงบ้าง?";
 const answer =
-  "Median latency dropped 18% after the caching change on Tuesday. The p95 is still spiky between 09:00–10:00 UTC — that window matches the nightly re-index job.";
+  "ค่ามัธยฐานลดลง 18% หลังปรับ caching เมื่อวันอังคาร แต่ค่า p95 ยังพุ่งอยู่ช่วง 09:00–10:00 น. ซึ่งตรงกับเวลาที่งาน re-index รอบกลางคืนทำงานพอดี";
 
 const TypingDots = () => (
-  <span className="inline-flex items-center gap-1" aria-label="DEV is typing">
+  <span className="inline-flex items-center gap-1" aria-label="DEV กำลังพิมพ์">
     {[0, 1, 2].map((i) => (
       <span
         key={i}
@@ -38,7 +38,7 @@ const ChatPreview = () => {
     <div className="overflow-hidden rounded-3xl border border-dev-line bg-dev-surface shadow-[0_30px_80px_-60px_rgb(0_0_0/0.6)]">
       <div className="flex items-center justify-between border-b border-dev-line/80 px-5 py-3.5">
         <DevLogo />
-        <span className="text-xs text-dev-ink-soft">Live preview</span>
+        <span className="text-xs text-dev-ink-soft">ตัวอย่างการใช้งาน</span>
       </div>
 
       <div className="space-y-5 px-5 py-6 sm:px-7 sm:py-8">
@@ -73,7 +73,7 @@ const ChatPreview = () => {
                 className="inline-flex items-center gap-3 rounded-2xl border border-dev-line bg-dev-elevated px-4 py-3"
               >
                 <TypingDots />
-                <span className="text-[13px] text-dev-ink-soft">DEV is thinking</span>
+                <span className="text-[13px] text-dev-ink-soft">DEV กำลังคิด</span>
               </motion.div>
             )}
             {stage === 2 && (
@@ -97,7 +97,7 @@ const ChatPreview = () => {
                   ))}
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2 border-t border-dev-line/70 pt-3">
-                  {["latency-report.csv", "deploy log", "index job"].map((source) => (
+                  {["latency-report.csv", "บันทึกการ deploy", "งาน re-index"].map((source) => (
                     <span
                       key={source}
                       className="rounded-full bg-dev-accent-soft px-2.5 py-1 text-[11.5px] font-medium text-dev-accent"

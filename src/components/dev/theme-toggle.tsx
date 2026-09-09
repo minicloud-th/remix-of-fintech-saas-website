@@ -32,7 +32,7 @@ const ThemeToggle = ({ className }: { className?: string }) => {
   return (
     <motion.button
       type="button"
-      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+      aria-label={isDark ? "สลับเป็นโหมดสว่าง" : "สลับเป็นโหมดมืด"}
       onClick={() => setTheme(isDark ? "light" : "dark")}
       whileHover={{ scale: 1.04 }}
       whileTap={{ scale: 0.96 }}

@@ -5,33 +5,33 @@ import { useMotionSafe, viewportOnce } from "./motion";
 const features = [
   {
     icon: Zap,
-    title: "Answers in a breath",
-    body: "Streaming responses that start the moment you hit send, so you never watch a spinner.",
+    title: "ตอบไวในพริบตา",
+    body: "คำตอบเริ่มไหลทันทีที่กดส่ง ไม่ต้องนั่งรอวงกลมหมุน",
   },
   {
     icon: BookOpen,
-    title: "Grounded in sources",
-    body: "Every answer can cite where it came from, so you can verify instead of guess.",
+    title: "อ้างอิงแหล่งที่มาได้",
+    body: "ทุกคำตอบบอกที่มาได้ ตรวจสอบได้จริง ไม่ต้องเดา",
   },
   {
     icon: Code2,
-    title: "Built for builders",
-    body: "Explain a stack trace, refactor a function, or draft a migration without leaving the chat.",
+    title: "ออกแบบมาเพื่อคนสร้างงาน",
+    body: "อธิบาย error, รีแฟคเตอร์ฟังก์ชัน หรือร่าง migration ได้ในหน้าแชทเดียว",
   },
   {
     icon: BarChart3,
-    title: "Reads your data",
-    body: "Drop in a CSV or a log file and ask what actually changed — DEV does the analysis.",
+    title: "อ่านข้อมูลของคุณได้",
+    body: "แนบไฟล์ CSV หรือ log แล้วถามว่าอะไรเปลี่ยนไป DEV วิเคราะห์ให้เอง",
   },
   {
     icon: Languages,
-    title: "Speaks your language",
-    body: "Fluent across dozens of languages, with tone that adapts to how you write.",
+    title: "สื่อสารได้หลายภาษา",
+    body: "คล่องทั้งไทยและอีกหลายสิบภาษา พร้อมปรับโทนตามสไตล์การเขียนของคุณ",
   },
   {
     icon: ShieldCheck,
-    title: "Private by default",
-    body: "Your conversations stay yours. No training on your chats, ever.",
+    title: "เป็นส่วนตัวตั้งแต่ต้น",
+    body: "บทสนทนาเป็นของคุณคนเดียว ไม่นำไปเทรนโมเดลเด็ดขาด",
   },
 ];
 
@@ -52,10 +52,10 @@ const DevFeatures = () => {
             variants={fadeUp(0)}
             className="text-[28px] font-semibold tracking-[-0.03em] text-dev-ink sm:text-[38px]"
           >
-            Everything you'd ask a very good colleague.
+            ทุกเรื่องที่คุณอยากถามเพื่อนร่วมงานเก่ง ๆ สักคน
           </motion.h2>
           <motion.p variants={fadeUp(0.08)} className="mt-4 text-[16px] leading-relaxed text-dev-ink-soft">
-            One assistant for research, analysis, writing and code — without a drawer full of tabs.
+            ผู้ช่วยเดียวที่ค้นคว้า วิเคราะห์ เขียนงาน และเขียนโค้ดได้ ไม่ต้องเปิดแท็บเต็มจอ
           </motion.p>
         </motion.div>
 

@@ -7,9 +7,9 @@ import DevDownload from "@/components/dev/download";
 import DevFaq from "@/components/dev/faq";
 import DevFooter from "@/components/dev/footer";
 
-const title = "DEV — Your intelligent AI assistant";
+const title = "DEV — ผู้ช่วย AI อัจฉริยะของคุณ";
 const description =
-  "Ask questions, explore ideas, analyze information and get useful answers in one place. Download the DEV AI assistant for Android.";
+  "ถามคำถาม สำรวจไอเดีย วิเคราะห์ข้อมูล และได้คำตอบที่ใช้ได้จริง ครบในที่เดียว ดาวน์โหลดผู้ช่วย AI DEV สำหรับ Android";
 
 const jsonLd = {
   "@context": "https://schema.org",

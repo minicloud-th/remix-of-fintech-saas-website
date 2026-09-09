@@ -5,24 +5,24 @@ import { useMotionSafe, viewportOnce } from "./motion";
 
 const faqs = [
   {
-    q: "Is DEV free to use?",
-    a: "Yes. The Android app is free, with generous daily usage. Heavier workloads can move to a paid tier later.",
+    q: "DEV ใช้ฟรีไหม?",
+    a: "ฟรีครับ แอปบน Android ใช้ได้ฟรี พร้อมโควตาต่อวันที่ใจกว้าง หากใช้งานหนักมากค่อยอัปเกรดเป็นแพ็กเกจแบบเสียเงินภายหลังได้",
   },
   {
-    q: "Why an APK instead of the Play Store?",
-    a: "The store listing is in review. The APK is the same signed build, so early users don't have to wait.",
+    q: "ทำไมเป็นไฟล์ APK ไม่ใช่ Play Store?",
+    a: "ตอนนี้อยู่ระหว่างรอตรวจสอบบนสโตร์ ไฟล์ APK คือบิลด์เดียวกันที่เซ็นรับรองแล้ว ผู้ใช้กลุ่มแรกจึงไม่ต้องรอ",
   },
   {
-    q: "Do you train on my conversations?",
-    a: "No. Your chats are never used to train models, and you can delete any thread permanently at any time.",
+    q: "เอาบทสนทนาไปเทรนโมเดลหรือเปล่า?",
+    a: "ไม่ครับ บทสนทนาของคุณไม่ถูกนำไปเทรนโมเดล และลบถาวรได้ทุกเมื่อ",
   },
   {
-    q: "Can DEV read files?",
-    a: "Documents, spreadsheets, logs and images can be attached to any message, and DEV answers with the file in context.",
+    q: "DEV อ่านไฟล์ได้ไหม?",
+    a: "แนบเอกสาร สเปรดชีต ไฟล์ log หรือรูปภาพไปกับข้อความได้เลย DEV จะตอบโดยอ้างอิงเนื้อหาในไฟล์นั้น",
   },
   {
-    q: "Will there be an iOS app?",
-    a: "It's in progress. The web app works on iOS today and syncs with your Android threads.",
+    q: "จะมีแอปบน iOS ไหม?",
+    a: "กำลังพัฒนาอยู่ครับ ระหว่างนี้ใช้เว็บแอปบน iOS ได้เลย และซิงก์บทสนทนากับเครื่อง Android ได้",
   },
 ];
 
@@ -40,7 +40,7 @@ const DevFaq = () => {
           viewport={viewportOnce}
           className="text-[28px] font-semibold tracking-[-0.03em] text-dev-ink sm:text-[38px]"
         >
-          Questions, answered.
+          คำถามที่พบบ่อย
         </motion.h2>
 
         <motion.div

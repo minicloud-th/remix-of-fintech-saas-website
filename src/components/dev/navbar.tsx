@@ -7,10 +7,10 @@ import ThemeToggle from "./theme-toggle";
 import { useMotionSafe } from "./motion";
 
 const links = [
-  { label: "Features", href: "#features" },
-  { label: "How it works", href: "#how-it-works" },
-  { label: "Download", href: "#download" },
-  { label: "FAQ", href: "#faq" },
+  { label: "ความสามารถ", href: "#features" },
+  { label: "วิธีใช้งาน", href: "#how-it-works" },
+  { label: "ดาวน์โหลด", href: "#download" },
+  { label: "คำถามที่พบบ่อย", href: "#faq" },
 ];
 
 const DevNavbar = () => {
@@ -63,11 +63,11 @@ const DevNavbar = () => {
             transition={{ duration: 0.2 }}
             className="hidden h-9 items-center rounded-full bg-dev-ink px-4 text-sm font-medium text-dev-bg sm:inline-flex"
           >
-            Get the app
+            ดาวน์โหลดแอป
           </motion.a>
           <button
             type="button"
-            aria-label={open ? "Close menu" : "Open menu"}
+            aria-label={open ? "ปิดเมนู" : "เปิดเมนู"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
             className="grid h-9 w-9 place-items-center rounded-full border border-dev-line text-dev-ink-soft md:hidden"
