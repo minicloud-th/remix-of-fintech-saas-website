@@ -13,6 +13,7 @@ export default {
   	extend: {
   		fontFamily: {
   			sans: [
+  				'IBM Plex Sans Thai',
   				'Inter Tight',
   				'system-ui',
   				'sans-serif'
